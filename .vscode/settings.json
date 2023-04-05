@@ -1,0 +1,8 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/ubuntu/humble_ws/install/ublox_msgs/local/lib/python3.10/dist-packages",
+        "/home/ubuntu/humble_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
