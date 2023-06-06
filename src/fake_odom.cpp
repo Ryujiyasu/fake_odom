@@ -15,7 +15,7 @@ FakeOdom::FakeOdom()
   MmJoy_.x=0.0;
   MmJoy_.y=0.0;
   RCLCPP_INFO(this->get_logger(), "Run!");
-  odom_pub_ = this->create_publisher<nav_msgs::msg::Odometry>("odom", rclcpp::QoS(10));
+  odom_pub_ = this->create_publisher<nav_msgs::msg::Odometry>("wheel/odometry", rclcpp::QoS(10));
   tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(this);
   odom_timer_callback(std::chrono::milliseconds(1));
   cmd_vel_callback();
